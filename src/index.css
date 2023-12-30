@@ -11,7 +11,9 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin: 16px
+  touch-action: none;
+  margin-top: 30px;
+  max-width: 768px;
 }
 
 a {
@@ -24,29 +26,40 @@ a:hover {
 }
 
 .container {
-  position: relative;
-  width: 700px; 
-  margin:50px auto 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrar verticalmente los elementos */
+  justify-content: center; /* Centrar horizontalmente los elementos */
+  align-items: center; /* Centrar verticalmente los elementos */
+  width: 375px; 
+  margin:0;
   text-align: center; 
 }
 .ruleta {
-  width: 500px;
-  height:500px;
+  width: 450px;
+  height:350px;
   background-size: cover;
   background-position: center;
-  margin:auto;
+  margin:0;
+  user-select: none;
 }
 .central{
   position: absolute;
-  left:0;
-  right:33px;
-  margin:auto;
+  left:160px;
+  right:0px;
   width:40px;
-  top:0px;
+  top:20px;
 }
 img{
   width:100%;
+  user-select: none;
+  -webkit-touch-callout: none; /* Evita que se muestre el menú de llamada IOS */
+  -webkit-user-select: none; /* Desactiva la selección de texto IOS */
 }
-
-
+}
+.premio{
+  position: relative;
+  margin:0px;
+  width: 200px;
+}
 
