@@ -1,24 +1,25 @@
-import React from 'react'
 import { PiezaRuleta } from './PiezaRuleta'
 
-export const Ruleta = () => {
+export const Ruleta = ({rotar, timeDuration}) => {
     const data = [
-       "Mati Gato",
-       "Leo Gato",
-       "Mati Gato",
-       "Mati Gato",
-       "Mati Gato",
-       "Mati Gato",
-       "Mati Gato",
-       "Mati Gato",
-       "Mati Gato",
-       "Mati Gato",
-       "Mati Gato",
+       "Nada",
+       "Nada",
+       "Coca-cola",
+       "nada",
+       "Don satur",
+       "nada",
+       "alfajaor",
+       "nada",
+       "nada",
+       "otra oportunidad",
+       "Coca cola",
        "Mati Gato"
       ];
   return (
     <div className="ruleta-container">
-         <div id="ruleta">
+         <div id="ruleta"
+         style={{ transform: `rotate(${rotar}deg)`, transitionDuration :  `${timeDuration}s` }}
+         >
             {data && data.map((item, index) => <PiezaRuleta key={index} text={item}/> )}
         </div>
     </div>

@@ -23,6 +23,9 @@ body{
   border: 20px solid black;
   border-radius: 50%;
   overflow: hidden;
+  transform: rotate(0deg);
+  transition-property: transform;
+  transition-timing-function: ease;
 }
 
 #ruleta .ruleta-seccion{
