@@ -1,0 +1,38 @@
+.container{
+    border-bottom: 5px solid black;
+    border-left: 5px solid black;
+    width: 300px;
+    height: 300px;
+    position: relative;
+
+}
+.containerGrande{
+    width: 900px;
+}
+.barra{
+    width: 90px;
+    height: 20px;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+.rojo{
+    background-color:red
+}
+
+.animar{
+    animation: animar1 2s infinite ease-in-out;
+    animation-play-state: running;
+}
+.parar{
+    animation-play-state:paused;
+}
+@keyframes animar1{
+    0%{
+        height: 0px;
+    }
+    100%{
+        height:var(--altura);
+    }
+}
+

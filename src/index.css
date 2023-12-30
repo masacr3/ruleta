@@ -11,6 +11,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 16px
 }
 
 a {
@@ -23,9 +24,9 @@ a:hover {
 }
 
 .container {
+  position: relative;
   width: 700px; 
-  margin:30px auto 15px;
-  margin-right: auto;
+  margin:50px auto 15px;
   text-align: center; 
 }
 .ruleta {
@@ -33,16 +34,15 @@ a:hover {
   height:500px;
   background-size: cover;
   background-position: center;
-  margin:0 auto 15px;
-  background-image: url('./assets/ruletaa.png');
+  margin:auto;
 }
 .central{
   position: absolute;
   left:0;
-  right:0;
+  right:33px;
   margin:auto;
-  width:120px;
-  top:174px;
+  width:40px;
+  top:0px;
 }
 img{
   width:100%;
