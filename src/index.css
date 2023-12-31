@@ -15,8 +15,8 @@ body{
 }
 
 #ruleta{
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   position: relative;
   font-size: 14px;
    background-color: wheat;
@@ -40,16 +40,19 @@ body{
   transform: rotate(45deg);
   box-sizing: border-box;
 }
+
+
 #ruleta .ruleta-seccion .ruleta-seccion-container{
   position: absolute;
-  left: -100%;
-  background: aqua;
+  left: -116%;
+  top: 20px;
   width: 200%;
   height: 200%;
   text-align: center;
   padding-bottom: 20px;
   box-sizing: border-box;
-  transform: skewY(60deg) rotate(15deg);
+  padding: 0;
+  transform: skewY(0deg) rotate(45deg);
   /* -webkit-transform: skewY(60deg) rotate(15deg);
   -moz-transform: skewY(60deg) rotate(15deg);
   -ms-transform: skewY(60deg) rotate(15deg);
@@ -57,7 +60,7 @@ body{
 }
 
 #ruleta .ruleta-seccion:first-child{
-  transform: rotate(0deg ) skewY(-60deg);
+  transform: rotate(0deg ) skewY(-30deg);
   /* -webkit-transform: skewY(0deg) rotate(-60deg);
   -moz-transform: skewY(0deg) rotate(-60deg);
   -ms-transform: skewY(0deg) rotate(-60deg);
@@ -67,7 +70,7 @@ body{
   
 }
 #ruleta .ruleta-seccion:nth-child(2){
-  transform: rotate(30deg ) skewY(-60deg);
+  transform: rotate(60deg ) skewY(-30deg);
   /* -webkit-transform: skewY(0deg) rotate(-60deg);
   -moz-transform: skewY(0deg) rotate(-60deg);
   -ms-transform: skewY(0deg) rotate(-60deg);
@@ -77,7 +80,7 @@ body{
   
 }
 #ruleta .ruleta-seccion:nth-child(3){
-  transform: rotate(60deg ) skewY(-60deg);
+  transform: rotate(120deg ) skewY(-30deg);
   /* -webkit-transform: skewY(0deg) rotate(-60deg);
   -moz-transform: skewY(0deg) rotate(-60deg);
   -ms-transform: skewY(0deg) rotate(-60deg);
@@ -87,7 +90,7 @@ body{
   
 }
 #ruleta .ruleta-seccion:nth-child(4){
-  transform: rotate(90deg ) skewY(-60deg);
+  transform: rotate(180deg ) skewY(-30deg);
   /* -webkit-transform: skewY(0deg) rotate(-60deg);
   -moz-transform: skewY(0deg) rotate(-60deg);
   -ms-transform: skewY(0deg) rotate(-60deg);
@@ -96,8 +99,9 @@ body{
   border: 1px solid black;
   
 }
+
 #ruleta .ruleta-seccion:nth-child(5){
-  transform: rotate(120deg ) skewY(-60deg);
+  transform: rotate(240deg ) skewY(-30deg);
   /* -webkit-transform: skewY(0deg) rotate(-60deg);
   -moz-transform: skewY(0deg) rotate(-60deg);
   -ms-transform: skewY(0deg) rotate(-60deg);
@@ -107,7 +111,7 @@ body{
   
 }
 #ruleta .ruleta-seccion:nth-child(6){
-  transform: rotate(150deg ) skewY(-60deg);
+  transform: rotate(300deg ) skewY(-30deg);
   /* -webkit-transform: skewY(0deg) rotate(-60deg);
   -moz-transform: skewY(0deg) rotate(-60deg);
   -ms-transform: skewY(0deg) rotate(-60deg);
@@ -116,70 +120,9 @@ body{
   border: 1px solid black;
   
 }
-#ruleta .ruleta-seccion:nth-child(7){
-  transform: rotate(180deg ) skewY(-60deg);
-  /* -webkit-transform: skewY(0deg) rotate(-60deg);
-  -moz-transform: skewY(0deg) rotate(-60deg);
-  -ms-transform: skewY(0deg) rotate(-60deg);
-  -o-transform: skewY(0deg) rotate(-60deg); */
-  box-sizing: border-box;
-  border: 1px solid black;
-  
-}
-#ruleta .ruleta-seccion:nth-child(8){
-  transform: rotate(210deg ) skewY(-60deg);
-  /* -webkit-transform: skewY(0deg) rotate(-60deg);
-  -moz-transform: skewY(0deg) rotate(-60deg);
-  -ms-transform: skewY(0deg) rotate(-60deg);
-  -o-transform: skewY(0deg) rotate(-60deg); */
-  box-sizing: border-box;
-  border: 1px solid black;
-  
-}
-#ruleta .ruleta-seccion:nth-child(9){
-  transform: rotate(240deg ) skewY(-60deg);
-  /* -webkit-transform: skewY(0deg) rotate(-60deg);
-  -moz-transform: skewY(0deg) rotate(-60deg);
-  -ms-transform: skewY(0deg) rotate(-60deg);
-  -o-transform: skewY(0deg) rotate(-60deg); */
-  box-sizing: border-box;
-  border: 1px solid black;
-  
-}
-#ruleta .ruleta-seccion:nth-child(10){
-  transform: rotate(270deg ) skewY(-60deg);
-  /* -webkit-transform: skewY(0deg) rotate(-60deg);
-  -moz-transform: skewY(0deg) rotate(-60deg);
-  -ms-transform: skewY(0deg) rotate(-60deg);
-  -o-transform: skewY(0deg) rotate(-60deg); */
-  box-sizing: border-box;
-  border: 1px solid black;
-  
-}
-#ruleta .ruleta-seccion:nth-child(11){
-  transform: rotate(300deg ) skewY(-60deg);
-  /* -webkit-transform: skewY(0deg) rotate(-60deg);
-  -moz-transform: skewY(0deg) rotate(-60deg);
-  -ms-transform: skewY(0deg) rotate(-60deg);
-  -o-transform: skewY(0deg) rotate(-60deg); */
-  box-sizing: border-box;
-  border: 1px solid black;
-  
-}
-#ruleta .ruleta-seccion:nth-child(12){
-  transform: rotate(330deg ) skewY(-60deg);
-  /* -webkit-transform: skewY(0deg) rotate(-60deg);
-  -moz-transform: skewY(0deg) rotate(-60deg);
-  -ms-transform: skewY(0deg) rotate(-60deg);
-  -o-transform: skewY(0deg) rotate(-60deg); */
-  box-sizing: border-box;
-  border: 1px solid black;
-  
-}
-
 
 #ruleta .ruleta-seccion .ruleta-seccion-container p{
-  margin-top: 30px;
+  margin-top: 40px;
   transform: rotate(-90deg);
 
 }
