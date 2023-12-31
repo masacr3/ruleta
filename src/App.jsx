@@ -14,7 +14,7 @@ function App() {
   
   const [rotar, setRotar] = useState(0)
   const [timeAnimation, setTimeAnimation] = useState(0)
-  const [data, setData] = useState(shuffle(["coca-cola","nada","casi","Daale gato","galletitas","nose"]))
+  const [data, setData] = useState(shuffle(["1","2","3","4","5","6"]))
   // const [data, setData] = useState(shuffle(["coca-cola"]))
 
   useEffect( () =>{
@@ -49,12 +49,15 @@ function App() {
 
   return (
     <div className="app-container">
+      <h1
+        className="font-gaming"
+      >El Carlo</h1>
       <Selector/>
       <Ruleta rotar={rotar} timeDuration={timeAnimation} data={data}/> 
       {rotar == 0 ?
-        <button onClick={Lanzar}>Lanzar</button> 
+        <button className="bton-gaming" onClick={Lanzar}>LANZAR !</button> 
         :
-        <button onClick={Reiniciar}>Reiniciar</button>
+        <button className="bton-gaming" onClick={Reiniciar}>Reiniciar</button>
       }
       
     </div>

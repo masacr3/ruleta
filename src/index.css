@@ -4,9 +4,8 @@ body{
   justify-content: center;
   align-items:center;
   width: 100%;
-  background-color: blue;
+  background-color: rgb(30, 30, 34);
   box-sizing: border-box;
-  margin-top: 60px;
 }
 .app-container{
   display: flex;
@@ -19,8 +18,8 @@ body{
   height: 300px;
   position: relative;
   font-size: 14px;
-   background-color: wheat;
-  border: 20px solid black;
+   background-color: transparent;
+  border: 20px solid #1249c9;
   border-radius: 50%;
   overflow: hidden;
   transform: rotate(0deg);
@@ -66,7 +65,7 @@ body{
   -ms-transform: skewY(0deg) rotate(-60deg);
   -o-transform: skewY(0deg) rotate(-60deg); */
   box-sizing: border-box;
-  border: 1px solid black;
+  border: 1px solid #1249c9;
   
 }
 #ruleta .ruleta-seccion:nth-child(2){
@@ -76,7 +75,7 @@ body{
   -ms-transform: skewY(0deg) rotate(-60deg);
   -o-transform: skewY(0deg) rotate(-60deg); */
   box-sizing: border-box;
-  border: 1px solid black;
+  border: 1px solid #1249c9;
   
 }
 #ruleta .ruleta-seccion:nth-child(3){
@@ -86,7 +85,7 @@ body{
   -ms-transform: skewY(0deg) rotate(-60deg);
   -o-transform: skewY(0deg) rotate(-60deg); */
   box-sizing: border-box;
-  border: 1px solid black;
+  border: 1px solid #1249c9;
   
 }
 #ruleta .ruleta-seccion:nth-child(4){
@@ -96,7 +95,7 @@ body{
   -ms-transform: skewY(0deg) rotate(-60deg);
   -o-transform: skewY(0deg) rotate(-60deg); */
   box-sizing: border-box;
-  border: 1px solid black;
+  border: 1px solid #1249c9;
   
 }
 
@@ -107,7 +106,7 @@ body{
   -ms-transform: skewY(0deg) rotate(-60deg);
   -o-transform: skewY(0deg) rotate(-60deg); */
   box-sizing: border-box;
-  border: 1px solid black;
+  border: 1px solid #1249c9;
   
 }
 #ruleta .ruleta-seccion:nth-child(6){
@@ -117,14 +116,21 @@ body{
   -ms-transform: skewY(0deg) rotate(-60deg);
   -o-transform: skewY(0deg) rotate(-60deg); */
   box-sizing: border-box;
-  border: 1px solid black;
+  border: 1px solid #1249c9;
   
 }
 
 #ruleta .ruleta-seccion .ruleta-seccion-container p{
-  margin-top: 40px;
-  transform: rotate(-90deg);
+  margin-top: 25px;
+  transform: rotate(0deg);
+  font-size: 28px;
+  font-family: 'Press Start 2P', serif;
+  color: #1249c9;
+}
 
+.font-gaming{
+  font-family: 'Press Start 2P', serif;
+  color: #12c918;
 }
 
 .selector{
@@ -133,13 +139,23 @@ body{
   height: 0;
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
-  border-bottom: 86.6px solid red; /* Altura del triángulo = base / 2 * sqrt(3) */
+  border-bottom: 86.6px solid rgba(187, 255, 0, 0.369); /* Altura del triángulo = base / 2 * sqrt(3) */
   transform: rotate(180deg);  
   position: absolute;
   border-top: 50px solid transparent;
   border-right: 50px solid transparent;
   border-left: 50px solid transparent;
   z-index: 1;
-  top: 30px;
- 
+  top: 81px;
+  border-radius: 20px;
+}
+
+.bton-gaming{
+  background-color: transparent;
+  border: 3px solid #12c918;
+  font-family: 'Press Start 2P', serif;
+  font-size: 30px;
+  color: #12c918;
+  border-radius: 10px;
+  padding: 16px;
 }
