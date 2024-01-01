@@ -11,7 +11,7 @@ function Menu({registros}) {
                 <div
                     className='font-gaming'
                 >
-                    {index} - {item}
+                    {index + 1} - {item}
                 </div>
             </div>
         )

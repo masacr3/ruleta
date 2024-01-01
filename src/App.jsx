@@ -16,7 +16,7 @@ function App() {
   const [rotar, setRotar] = useState(0)
   const [timeAnimation, setTimeAnimation] = useState(0)
   const [data, setData] = useState(shuffle(["1","2","3","4","5","6"]))
-  const [opciones, setOpciones] = useState(["Coca-cola","Nada","Dalee gato","Don satur","Casii","Una gomita"])
+  const [opciones, setOpciones] = useState(["Gualmayen","Nada","Dalee gato","Manaos","Casii","Una gomita"])
   // const [data, setData] = useState(shuffle(["coca-cola"]))
 
   useEffect( () =>{
