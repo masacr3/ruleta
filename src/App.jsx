@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Ruleta } from "./components/Ruleta";
 import { Selector } from "./components/Selector";
+import Menu from "./components/Menu";
 
 function App() {
   
@@ -15,6 +16,7 @@ function App() {
   const [rotar, setRotar] = useState(0)
   const [timeAnimation, setTimeAnimation] = useState(0)
   const [data, setData] = useState(shuffle(["1","2","3","4","5","6"]))
+  const [opciones, setOpciones] = useState(["Coca-cola","Nada","Dalee gato","Don satur","Casii","Una gomita"])
   // const [data, setData] = useState(shuffle(["coca-cola"]))
 
   useEffect( () =>{
@@ -54,6 +56,7 @@ function App() {
       >El Carlo</h1>
       <Selector/>
       <Ruleta rotar={rotar} timeDuration={timeAnimation} data={data}/> 
+      <Menu registros={opciones}/>
       {rotar == 0 ?
         <button className="bton-gaming" onClick={Lanzar}>LANZAR !</button> 
         :
